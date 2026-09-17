@@ -1,0 +1,10 @@
+{
+    // This will set up the unit tests in VS Code for you
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "workbench.editor.empty.hint": "hidden",
+    "chat.disableAIFeatures": true
+}

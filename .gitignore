@@ -1,0 +1,4 @@
+# This files stops unnecessary files being added to git
+
+__pytest_cache__
+__pycache__
