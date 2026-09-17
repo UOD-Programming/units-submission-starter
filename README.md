@@ -54,7 +54,7 @@ When a new unit is released:
 
 Only edit the .py files inside each unit’s src/lessons and src/exercises folders. All other supplied files and folders must remain unchanged.
 
-Do not place the ZIP file itself in your repository. You must extract it and copy the contents of the unit folder into the correct folder in your repository.
+Do not place the ZIP file itself in your repository. You must extract it and copy the unit folder and all of its contents into the repository.
 
 ## Required folder structure
 
