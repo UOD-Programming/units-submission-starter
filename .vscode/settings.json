@@ -1,0 +1,10 @@
+{
+    "python.testing.pytestArgs": [
+        "-c",
+        "pytest.ini"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "chat.disableAIFeatures": true,
+    "workbench.settings.showAISearchToggle": false
+}
