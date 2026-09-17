@@ -2,17 +2,17 @@
 
 The starter repository containing unit 1. All subsequent units will need to be downloaded from Blackboard and unzipped into this repository in the correct manner.
 
-## Units (36%)
+## Units (32%)
 
 
 There are a total of 8 units which include Lessons and Exercises.
 
 These are auto-graded, and you will be assessed on your answers to these, but also on your engagement in practicals.
 
-## Practical Engagement (16%)
+## Practical Engagement (18%)
 
 
-You will also be assessed on your engagement with the lessons in 8 out of 12 practicals. These are worth 2% each, totalling 16%.
+You will also be assessed on your engagement with the lessons in 9 out of 12 practicals. These are worth 2% each, totalling 18%.
 
 Award the 2% session credit where the student can demonstrate meaningful progress on relevant unit work during the practical. The work does not need to be complete or correct, and the student may be working on any unit.
 
