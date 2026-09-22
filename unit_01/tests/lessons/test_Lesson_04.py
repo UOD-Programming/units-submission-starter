@@ -4,6 +4,9 @@
 import pytest
 import subprocess
 import sys
+from pathlib import Path
+
+UNIT_ROOT = Path(__file__).resolve().parents[2]
 
 
 
@@ -13,6 +16,7 @@ def test_lesson_4():
         [sys.executable, 'src/lessons/Lesson_04.py'],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
+        cwd=UNIT_ROOT,
         text=True
     )
 

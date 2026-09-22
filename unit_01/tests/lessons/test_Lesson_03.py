@@ -3,6 +3,9 @@
 # I WILL ALSO BE NOTIFIED OF THIS WHEN YOU SUBMIT TO GITHUB
 import subprocess
 import sys
+from pathlib import Path
+
+UNIT_ROOT = Path(__file__).resolve().parents[2]
 
 def test_lesson_3():
     # Run the student's script as a subprocess
@@ -10,6 +13,7 @@ def test_lesson_3():
         [sys.executable, 'src/lessons/Lesson_03.py'],  # Path to the L1_Exercise.py script
         stdout=subprocess.PIPE,  # Capture stdout
         stderr=subprocess.PIPE,  # Capture stderr
+        cwd=UNIT_ROOT,
         text=True  # Get output as a string instead of bytes
     )
 

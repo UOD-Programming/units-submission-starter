@@ -3,6 +3,9 @@
 # I WILL ALSO BE NOTIFIED OF THIS WHEN YOU SUBMIT TO GITHUB
 import subprocess
 import sys
+from pathlib import Path
+
+UNIT_ROOT = Path(__file__).resolve().parents[2]
 
 # Helper function to run the test logic
 def run_test(input_number, expected_output):
@@ -12,6 +15,7 @@ def run_test(input_number, expected_output):
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
+        cwd=UNIT_ROOT,
         text=True
     )
 

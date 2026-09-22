@@ -4,6 +4,9 @@
 import subprocess
 import sys
 import re
+from pathlib import Path
+
+UNIT_ROOT = Path(__file__).resolve().parents[2]
 
 
 def test_exercise_1():
@@ -12,6 +15,7 @@ def test_exercise_1():
         [sys.executable, 'src/exercises/Exercise_01.py'],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
+        cwd=UNIT_ROOT,
         text=True
     )
 

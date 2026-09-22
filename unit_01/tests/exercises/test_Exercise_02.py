@@ -4,6 +4,9 @@
 import pytest
 import subprocess
 import sys
+from pathlib import Path
+
+UNIT_ROOT = Path(__file__).resolve().parents[2]
 
 import subprocess
 import sys
@@ -16,6 +19,7 @@ def run_test(num1, num2, expected_result):
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
+        cwd=UNIT_ROOT,
         text=True
     )
 
