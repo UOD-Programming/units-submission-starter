@@ -17,3 +17,12 @@ Make sure you have read all of the above before attempting this (especially the 
 ```python
 12 + 5 == 5 * 3.0
 ```
+
+The output of your program should be:
+
+```
+<class 'int'>
+<class 'float'>
+<class 'float'>
+<class 'bool'>
+```
