@@ -1,8 +1,8 @@
-# Unit 1 - Getting Started
+# Unit 3 - Branching and Decisions
 
 You can access the online notes for this unit.
 
-[Unit 1 - Getting Started](https://samtoneill.github.io/programming_in_python/unit_1/unit_1.html)
+[Unit 3 - Branching and Decisions](https://samtoneill.github.io/programming_in_python/unit_3/unit_3.html)
 
 ## Assessment
 
@@ -10,7 +10,7 @@ The **Lessons** are the same as the ones in the book. The **Exercises** are addi
 
 **Do the lessons first, they will help with the exercises!**
 
-You will find two folders, ``src`` and ``tests``. You should edit the .py files in ``src`` to pass the tests. 
+You will find two folders, ``src`` and ``tests``. You should edit the .py files in ``src`` to pass the tests.
 
 **Do note edit any files in the ``tests`` folder!**
 
