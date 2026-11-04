@@ -4,5 +4,5 @@ def load(filename):
   pass
 
 if __name__ == "__main__":
-  print(load("./src/lessons/Lesson_05_items.json"))
-  
+  print(load("./unit_07/src/lessons/Lesson_05_items.json"))
+

@@ -39,7 +39,7 @@ def print_menu(menu_dict):
 
 
 def main():
-  filename = "./src/exercises/Exercise_02_menu.json"
+  filename = "./unit_07/src/exercises/Exercise_02_menu.json"
   menu = load(filename)
   list_options()
   option = input("\nPlease select an option:\n")
@@ -93,7 +93,7 @@ I would use these to test each of the functions separately. You can use the code
 The ``load()`` function should take in a filename, e.g. ``Exercise_02_menu.json``, load the file and then return a Python dictionary.
 
 ```python
-filename = "./src/exercises/Exercise_02_menu.json"
+filename = "./unit_07/src/exercises/Exercise_02_menu.json"
 menu_dict = load(filename)
 print(menu_dict)
 ```
@@ -115,10 +115,10 @@ menu_two = {
     "1": {"Name": "Sweet and Sour Chicken", "Price": 5.99}  
   }
 }
-save("./src/exercises/Exercise_02_menu.json", menu_two)
+save("./unit_07/src/exercises/Exercise_02_menu.json", menu_two)
 ```
 
-Would save out to a file called ``./src/exercises/Exercise_02_menu.json`` with the contents
+Would save out to a file called ``./unit_07/src/exercises/Exercise_02_menu.json`` with the contents
 ```json
 menu_test_two = {
   "next_id": 2,

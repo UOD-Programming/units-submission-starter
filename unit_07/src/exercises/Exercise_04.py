@@ -6,4 +6,4 @@ def count_letters(filename):
   pass
 
 if __name__ == "__main__":
-  count_letters("./src/exercises/Exercise_04_words.txt")
+  count_letters("./unit_07/src/exercises/Exercise_04_words.txt")

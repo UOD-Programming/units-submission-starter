@@ -11,7 +11,7 @@ For example,
 ```python
 write_nums(10)
 ```
-Should output the first 10 numbers to the file ``Lesson_04_nums.txt``. Remember you will need to use the relative path. ``./src/lessons/Lesson_04_nums.txt``.
+Should output the first 10 numbers to the file ``Lesson_04_nums.txt``. Remember you will need to use the relative path. ``./unit_07/src/lessons/Lesson_04_nums.txt``.
 
 ```
 1

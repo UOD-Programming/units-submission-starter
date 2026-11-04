@@ -7,7 +7,7 @@ Write a program that reads in a square grid of numbers and find the largest ``n`
 The ``load_grid()`` function takes a filename, reads the contents of the file and returns the square grid as a list of lists.
 
 ```python
-filename = "Exercise_05_grid_5_by_5.txt"
+filename = "./unit_07/src/exercises/Exercise_05_grid_5_by_5.txt"
 grid = load_grid(filename)
 # returns [[8, 3, 6, 8, 9], [8, 4, 4, 5, 1], [9, 1, 2, 3, 2], [2, 7, 5, 6, 7], [7, 7, 1, 3, 3]]
 ```
@@ -104,7 +104,7 @@ def print_grid(grid):
     print("\n")
 
 if __name__ == "__main__":
-  filename = "./src/exercises/Exercise_05_grid_5_by_5.txt"
+  filename = "./unit_07/src/exercises/Exercise_05_grid_5_by_5.txt"
   grid = load_grid(filename)
   print_grid(grid)  # print the grid
   print(max_num_in_rows(grid, 3))  # prints 912

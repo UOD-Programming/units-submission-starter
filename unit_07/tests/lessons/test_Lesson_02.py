@@ -1,8 +1,10 @@
-import os
 import sys
+from pathlib import Path
 
-# Add the path to the src/lessons file to sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'src', 'lessons')))
+REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
+
+# Add the repository root so the unit_07 package can be imported.
+sys.path.insert(0, str(REPOSITORY_ROOT))
 
 from unit_07.src.lessons import Lesson_02_hello as hello
 

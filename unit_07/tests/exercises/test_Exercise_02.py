@@ -3,11 +3,11 @@ import json
 import copy
 from pathlib import Path
 
-UNIT_ROOT = Path(__file__).resolve().parents[2]
+REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
 
-# Add the path to the src/exercises file to sys.path
+# Add the repository root so the unit_07 package can be imported.
 import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'src', 'exercises')))
+sys.path.insert(0, str(REPOSITORY_ROOT))
 from unit_07.src.exercises.Exercise_02 import save, load, add_item
 
 

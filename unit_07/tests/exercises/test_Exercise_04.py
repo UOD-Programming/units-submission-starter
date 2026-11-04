@@ -1,12 +1,11 @@
-import os
 import sys
 from unittest.mock import patch
 from pathlib import Path
 
-UNIT_ROOT = Path(__file__).resolve().parents[2]
+REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
 
-# Add the path to the src/exercises file to sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'src', 'exercises')))
+# Add the repository root so the unit_07 package can be imported.
+sys.path.insert(0, str(REPOSITORY_ROOT))
 
 # Import the function to be tested
 from unit_07.src.exercises.Exercise_04 import count_letters
@@ -42,7 +41,7 @@ def test_letter_count_for_files_case1():
         'h: 2\n', 'i: 7\n', 'l: 3\n', 'm: 2\n', 'n: 3\n', 'o: 2\n', 'p: 2\n',
         's: 6\n', 't: 1\n', 'w: 1\n'
     ]
-    filename = UNIT_ROOT / "src/exercises/Exercise_04_test.txt"
+    filename = REPOSITORY_ROOT / "unit_07/src/exercises/Exercise_04_test.txt"
     run_count_letters_test(count_letters, [], expected_output1, filename)
 
 
@@ -55,5 +54,5 @@ def test_letter_count_for_files_case2():
         'l: 123\n', 'm: 84\n', 'n: 130\n', 'o: 84\n', 'p: 40\n', 'q: 26\n', 'r: 94\n', 's: 144\n', 't: 141\n',
         'u: 153\n', 'v: 25\n', 'x: 5\n'
     ]
-    filename = UNIT_ROOT / "src/exercises/Exercise_04_words.txt"
+    filename = REPOSITORY_ROOT / "unit_07/src/exercises/Exercise_04_words.txt"
     run_count_letters_test(count_letters, [], expected_output2, filename)

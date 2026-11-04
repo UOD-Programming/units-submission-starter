@@ -32,7 +32,7 @@ def print_menu(menu_dict):
 
 
 def main():
-  filename = "./src/exercises/Exercise_02_menu.json"
+  filename = "./unit_07/src/exercises/Exercise_02_menu.json"
   menu = load(filename)
   list_options()
   option = input("\nPlease select an option:\n")

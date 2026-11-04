@@ -3,22 +3,22 @@ import sys
 import random
 from pathlib import Path
 
-UNIT_ROOT = Path(__file__).resolve().parents[2]
+REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
 
-# Add the path to the src/lessons file to sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'src', 'lessons')))
+# Add the repository root so the unit_07 package can be imported.
+sys.path.insert(0, str(REPOSITORY_ROOT))
 
 from unit_07.src.lessons.Lesson_03 import number_of_lines
 
 
 def test_number_of_lines_test_txt():
-    filename = UNIT_ROOT / "src/lessons/Lesson_03_test.txt"
+    filename = REPOSITORY_ROOT / "unit_07/src/lessons/Lesson_03_test.txt"
     expected_lines = 25
     assert number_of_lines(filename) == expected_lines, f"Failed to count lines in {filename}"
 
 
 def test_number_of_lines_example_txt():
-    filename = UNIT_ROOT / "src/lessons/Lesson_03_example.txt"
+    filename = REPOSITORY_ROOT / "unit_07/src/lessons/Lesson_03_example.txt"
     expected_lines = 9
     assert number_of_lines(filename) == expected_lines, f"Failed to count lines in {filename}"
 
